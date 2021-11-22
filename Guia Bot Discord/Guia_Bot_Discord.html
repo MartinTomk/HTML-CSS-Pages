@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+        <!-- Main CSS -->
+        <!--<link rel = "stylesheet" href="sources/style.css" type="text/css">-->
+        <!--Se agrego el style de esta manera para no necesitar un archivo extra-->
+        <style>
+ 
+        .title-card-collapse {
+    text-decoration:  none;
+    color: black;
+    font-size: 24px;
+}
+
+#main>.container {
+    box-shadow: 1px 5px 6px rgba(0,0,0,0.5);
+    background-color:white;
+    padding-top: 5px;
+}
+.imagen-ayuda-login {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.imagen-ayuda-comandos {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.imagen-crear-comandos {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.imagen-head {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+h4 {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.titulo-principal {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+header{
+    background-color:grey;
+    height: 150px;
+}
+.header-logo{
+    margin-top: 30px;
+    margin-left: 20px;
+    width:75%;
+}
+#main{
+    background-color:#2A272B;
+    box-shadow: 1px 0px 6px rgba(0,0,0,0.6);
+}
+
+.header-text {
+    color: black;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+footer{
+    margin-top:5px;
+    background-color: black;
+    height: 20px;
+}
+.footer-text{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.h3 {
+    font-size: 5px;
+}
+.header-logo-pdep{
+    padding-top: 15px;
+    width: 35%;
+    text-align: end;
+    align-self: flex-end;
+    float:inline-end; 
+    justify-self: right;
+    text-align: right;
+}
+      </style>
+      </head>
+  <body>
+
+
+    <header>
+        <div class ="container">
+            <div class ="row">
+              <div class = "col-md-4">
+                <a href="https://www.frba.utn.edu.ar/"><img src ="https://i.imgur.com/slD9NW6.png" class ="header-logo" alt="Logo-UTN"></a>
+              </div>
+              <div class = "col-md-4">
+                
+              </div>
+              <div class = "col-md-4">
+                <a href="www.pdep.com.ar/"><img src ="https://i.imgur.com/ujZIwMR.png" class ="header-logo-pdep" alt="Logo-pdep"></a>
+              </div>
+            </div>
+
+        </div>
+    </header>
+    <div id = "main">
+        <div class = "container">
+            <div id = "welcome"></div>
+              <img src = "https://i.imgur.com/UhgtPdf.jpg" class = "imagen-head" alt = "Discord Bots">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h3 class = "title-card-collapse"> Agregando al bot al servidor </h3>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Primero nos dirigimos a <a href= "https://dyno.gg/">https://dyno.gg/</a> y nos logueamos con nuestra cuenta de discord, es necesario, poseer permisos 
+                      de administrador en el servidor.
+                      <img src="https://i.imgur.com/VoIFyes.jpg" class = "imagen-ayuda-login" alt = "ayuda-login">
+                     
+                      Habiendo accedido con la cuenta de discord nos dirigimos a "Add To Server"
+
+                      <img src="https://i.imgur.com/ZyXAT8J.jpg" class = "imagen-ayuda-login" alt = "ayuda-login">
+                      
+                      Luego tendremos una lista de servidores en los cuales poseemos derechos de administrador, seleccionamos el servidor en el cual 
+                      
+                      queremos incluir al bot.
+                      <img src="https://i.imgur.com/uCN8yLK.jpg" class = "imagen-ayuda-login" alt = "ayuda-login">
+                      
+                      Por último el bot pide unos permisos los cuales muchos son útiles para comandos que no utilizaremos en el presente documento
+                      los cuales mas adelante desactivaremos
+                      
+                      <img src="https://i.imgur.com/YpiuS9R.jpg" class = "imagen-ayuda-login" alt = "ayuda-login">
+                      
+                      Con esos pocos permisos el bot ya puede leer/responder mensajes, una vez terminado el bot ya esta dentro del servidor 
+                      con el nombre "dyno" pero ese apodo se puede cambiar desde discord y desde la configuracion del bot
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3 class = "title-card-collapse"> Desactivando comandos innecesarios </h3>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      A continuación desactivaremos los comandos que no vamos a usar, primero nos dirigimos a "Commands"
+                      <img src="https://i.imgur.com/N8fnjIq.jpg" class = "imagen-ayuda-comandos" alt = "ayuda-comandos">
+                      Tocamos en cada pestaña (Flechas rojas) y en cada uno tocamos "Disable All" Flecha Verde, esto lo hacemos por seguridad ya que
+                      hay comandos mas orientados a servidores de juegos
+                      Ahora activaremos el comando que permite crear algunos personalizados, dentro de la pestaña "Manager", buscamos el siguiente comando
+                      y lo activamos 
+                      <img src="https://i.imgur.com/KolOnjR.jpg" class = "imagen-ayuda-comandos" alt = "ayuda-comandos">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3 class = "title-card-collapse">Configurando el bot y creando Comandos</h3>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Volviendo a "Dashboard" en el menu izquierdo podremos configurar: <br>
+                      - Nickname del bot dentro del servidor - Flecha roja <br>
+                      - Prefijo del comando con el cual lo llamaremos Por ejemplo: ! (Flecha Azul)
+                      <img src="https://i.imgur.com/2oQcC7a.jpg" class = "imagen-crear-comandos" alt = "crear-comandos">
+                      Una vez configurado nos dirigimos a "Custom Commands", luego en ese modulo, se hace click en Add Command, se abre la siguiente ventana, la cual, 
+                      se debera completar segun corresponda.<br>
+                      La imagen debajo ya se encuentra completa como ejemplo
+                      <img src="https://i.imgur.com/zaZOqAg.jpg" class = "imagen-crear-comandos" alt = "crear-comandos">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+    </div>
+    
+    
+    <footer>
+        <div><h4 class="footer-text">Realizado por Martin Tomkinson para la materia <a href="www.pdep.com.ar">Paradigmas De Programacion</a></h4></div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
